@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+
 @dataclass
 class Elemento:
     nombre: str
@@ -8,6 +9,7 @@ class Elemento:
         if isinstance(other, Elemento):
             return self.nombre == other.nombre
         return False
+
 
 class Conjunto:
     contador = 0
